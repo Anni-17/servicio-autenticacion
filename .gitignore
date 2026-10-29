@@ -1,0 +1,20 @@
+# Archivos compilados
+target/
+*.class
+*.war
+
+# Configuración del IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Credenciales y variables de entorno
+.env
+*.properties
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
