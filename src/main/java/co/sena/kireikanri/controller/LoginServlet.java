@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
                 ResultSet rs = stmt.executeQuery();
                 
                 if (rs.next() && BCrypt.checkpw(pass, rs.getString("contrasena"))) {
-                    response.getWriter().write("{\"mensaje\": \"Login exitoso.\"}");
+                    response.getWriter().write("{\"mensaje\": \"Login exitoso\"}");
                 } else {
                     response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                     response.getWriter().write("{\"error\": \"Credenciales invalidas\"}");
